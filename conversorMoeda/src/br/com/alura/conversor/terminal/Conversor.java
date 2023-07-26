@@ -31,7 +31,7 @@ public class Conversor {
 		while(opcao != 6) {
 			System.out.print("Digite a sua opção: ");
 			opcao = sc.nextInt();
-			
+			// cotação das moedas feitas no dia 25/07/2023
 			switch(opcao) {
 			case 1:
 				System.out.println("Você escolheu 'Real --> Dólar'");
