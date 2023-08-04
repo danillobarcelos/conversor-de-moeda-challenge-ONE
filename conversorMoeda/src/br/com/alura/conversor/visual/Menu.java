@@ -21,6 +21,7 @@ public class Menu {
 			if (selectedInputInicial.equals("Conversor de Moedas")) {
 				// método conversor de moedas
 				JOptionPane.showMessageDialog(null, "Você escolheu o Conversor de Moedas");
+				ConversorMoedas.conversorMoedas();
 				break;
 			} else if (selectedInputInicial.equals("Conversor de Temperatura")) {
 				// método conversor de temperatura
