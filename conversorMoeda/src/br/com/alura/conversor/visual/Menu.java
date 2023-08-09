@@ -19,13 +19,57 @@ public class Menu {
 
 		while (selectedInputInicial != null) {
 			if (selectedInputInicial.equals("Conversor de Moedas")) {
-				// método conversor de moedas
 				JOptionPane.showMessageDialog(null, "Você escolheu o Conversor de Moedas");
-				ConversorMoedas.conversorMoedas();
-				break;
+				
+				Object[] opcoesEntrada = 
+					{"Real para Dólar", 
+					"Real para Euro", 
+					"Real para Libra Esterlina", 
+					"Real para Peso Argentino",
+					"Real para Peso Chileno",
+					"Sair"};
+				String selectedopcoesEntrada = (String) JOptionPane.showInputDialog(
+						null, 
+						"Selecione a conversão desejada",
+						"Conversor de Moedas",
+						JOptionPane.INFORMATION_MESSAGE,
+						null,
+						opcoesEntrada,
+						opcoesEntrada[0]);
+				
+				String valor = JOptionPane.showInputDialog("Insira um valor de entrada");
+				Double input = Double.parseDouble(valor);
+				Double output;
+				
+				while (selectedopcoesEntrada != null) {
+					if(opcoesEntrada.toString() == "Real para Dólar") {
+						ConversorMoedas.reaisParaDolar(input);
+//						JOptionPane.showMessageDialog(null, "O valor convertido é " + output.toString());
+						break;
+					} else if (opcoesEntrada.toString() == "Real para Euro") {
+						ConversorMoedas.reaisParaEuro(input);
+//						JOptionPane.showMessageDialog(null, "O valor convertido é " + output.toString());
+						break;
+					} else if (opcoesEntrada.toString() == "Real para Libra Esterlina") {
+						ConversorMoedas.reaisParaLibEst(input);
+//						JOptionPane.showMessageDialog(null, "O valor convertido é " + output.toString());
+						break;
+					} else if (opcoesEntrada.toString() == "Real para Peso Argentino") {
+						ConversorMoedas.reaisParaPesoArg(input);
+//						JOptionPane.showMessageDialog(null, "O valor convertido é " + output.toString());
+						break;
+					} else if (opcoesEntrada.toString() == "Real para Peso Chileno") {
+						ConversorMoedas.reaisParaPesoChi(input);
+//						JOptionPane.showMessageDialog(null, "O valor convertido é " + output.toString());
+						break;
+					} else {
+						break;
+					}
+					
+				}
 			} else if (selectedInputInicial.equals("Conversor de Temperatura")) {
 				// método conversor de temperatura
-				JOptionPane.showMessageDialog(null, "Você escolher o Conversor de Temperaturas");
+				JOptionPane.showMessageDialog(null, "Você escolheu o Conversor de Temperaturas");
 				break;
 			} else {
 				break;
