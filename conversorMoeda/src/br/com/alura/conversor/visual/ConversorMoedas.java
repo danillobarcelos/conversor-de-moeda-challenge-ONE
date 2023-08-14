@@ -1,5 +1,8 @@
 package br.com.alura.conversor.visual;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 import javax.swing.*;
 
 public class ConversorMoedas {
@@ -13,32 +16,84 @@ public class ConversorMoedas {
 		
 
 	public static void reaisParaDolar(double input) {
-		Double output;
-		output = input / dolar;
-		JOptionPane.showMessageDialog(null, "O valor convertido é " + output.toString());
+		double output = input / dolar;
+		
+		BigDecimal op = new BigDecimal(output);
+		BigDecimal outputNovo = op.setScale(2, RoundingMode.FLOOR);
+		JOptionPane.showMessageDialog(null, "O valor convertido é " + outputNovo);
 	}
 	
 	public static void reaisParaEuro(double input) {
-		Double output;
-		output = input / euro;
-		JOptionPane.showMessageDialog(null, "O valor convertido é " + output.toString());
+		double output = input / euro;
+		
+		BigDecimal op = new BigDecimal(output);
+		BigDecimal outputNovo = op.setScale(2, RoundingMode.FLOOR);
+		JOptionPane.showMessageDialog(null, "O valor convertido é " + outputNovo);
 	}
 	
 	public static void reaisParaLibEst(double input) {
-		Double output;
-		output = input / libEst;
-		JOptionPane.showMessageDialog(null, "O valor convertido é " + output.toString());
+		double output = input / libEst;
+
+		BigDecimal op = new BigDecimal(output);
+		BigDecimal outputNovo = op.setScale(2, RoundingMode.FLOOR);
+		JOptionPane.showMessageDialog(null, "O valor convertido é " + outputNovo);
 	}
 	
 	public static void reaisParaPesoArg(double input) {
-		Double output;
-		output = input / pesoArg;
-		JOptionPane.showMessageDialog(null, "O valor convertido é " + output.toString());
+		double output = input / pesoArg;
+
+		BigDecimal op = new BigDecimal(output);
+		BigDecimal outputNovo = op.setScale(2, RoundingMode.FLOOR);
+		JOptionPane.showMessageDialog(null, "O valor convertido é " + outputNovo);
 	}
 	
 	public static void reaisParaPesoChi(double input) {
-		Double output;
-		output = input / pesoChi;
-		JOptionPane.showMessageDialog(null, "O valor convertido é " + output.toString());
+		double output = input / pesoChi;
+
+		BigDecimal op = new BigDecimal(output);
+		BigDecimal outputNovo = op.setScale(2, RoundingMode.FLOOR);
+		JOptionPane.showMessageDialog(null, "O valor convertido é " + outputNovo);
 	}
+	
+	public static void dolarParaReal(double input) {
+		double output = input * dolar; 
+		
+		BigDecimal op = new BigDecimal(output);
+		BigDecimal outputNovo = op.setScale(2, RoundingMode.FLOOR);
+		JOptionPane.showMessageDialog(null, "O valor convertido é " + outputNovo);
+	}
+	
+	public static void euroParaReal(double input) {
+		double output = input * euro; 
+		
+		BigDecimal op = new BigDecimal(output);
+		BigDecimal outputNovo = op.setScale(2, RoundingMode.FLOOR);
+		JOptionPane.showMessageDialog(null, "O valor convertido é " + outputNovo);
+	}
+	
+	public static void libEstParaReal(double input) {
+		double output = input * libEst; 
+		
+		BigDecimal op = new BigDecimal(output);
+		BigDecimal outputNovo = op.setScale(2, RoundingMode.FLOOR);
+		JOptionPane.showMessageDialog(null, "O valor convertido é " + outputNovo);
+	}
+	
+	public static void pesoArgParaReal(double input) {
+		double output = input * pesoArg; 
+		
+		BigDecimal op = new BigDecimal(output);
+		BigDecimal outputNovo = op.setScale(2, RoundingMode.FLOOR);
+		JOptionPane.showMessageDialog(null, "O valor convertido é " + outputNovo);
+	}
+	
+	public static void pesoChiParaReal(double input) {
+		double output = input * pesoChi; 
+		
+		BigDecimal op = new BigDecimal(output);
+		BigDecimal outputNovo = op.setScale(2, RoundingMode.FLOOR);
+		JOptionPane.showMessageDialog(null, "O valor convertido é " + outputNovo);
+	}
+	
+	
 }
