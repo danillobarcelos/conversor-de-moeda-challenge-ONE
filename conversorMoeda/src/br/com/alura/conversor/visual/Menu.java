@@ -41,6 +41,11 @@ public class Menu {
 						opcoesEntrada,
 						opcoesEntrada[0]);
 				
+				if (selectedopcoesEntrada.equals("Sair")){
+					selectedInputInicial = null;
+					break;
+				} 
+				
 				String valor = JOptionPane.showInputDialog("Insira um valor de entrada");
 				
 				
@@ -81,8 +86,6 @@ public class Menu {
 					case "Peso Chileno para Real":
 						ConversorMoedas.pesoChiParaReal(input);
 						break;
-					case "Sair":
-						break;
 					} 
 				} else {
 					JOptionPane.showMessageDialog(null, "Insira um valor válido!");
@@ -99,10 +102,71 @@ public class Menu {
 					break;
 				}
 				
-			} else if (selectedInputInicial.equals("Conversor de Temperatura")) {
-				// método conversor de temperatura
-				JOptionPane.showMessageDialog(null, "Você escolheu o Conversor de Temperaturas");
-				break;
+			} else if (selectedInputInicial.equals("Conversor de Temperaturas")) {
+				
+				Object[] opcoesEntrada = 
+					{"Celsius para Kelvin", 
+					"Celsius para Fahrenheit", 
+					"Kelvin para Celsius", 
+					"Kelvin para Fahrenheit",
+					"Fahrenheit para Celsius",
+					"Fahrenheit para Kelvin",
+					"Sair"};
+				String selectedopcoesEntrada = (String) JOptionPane.showInputDialog(
+						null, 
+						"Selecione a conversão desejada",
+						"Conversor de Temperatura",
+						JOptionPane.INFORMATION_MESSAGE,
+						null,
+						opcoesEntrada,
+						opcoesEntrada[0]);
+				
+				if (selectedopcoesEntrada.equals("Sair")){
+					selectedInputInicial = null;
+					break;
+				} 
+				
+				String valor = JOptionPane.showInputDialog("Insira um valor de entrada");
+				VerificadorInput verifica = new VerificadorInput();
+			
+				if(verifica.verificadorNumerico(valor)) {
+					Double input = Double.parseDouble(valor);
+					
+					switch(selectedopcoesEntrada) {
+					case "Celsius para Kelvin":
+						ConversorTemperatura.celsiusToKevin(input);
+						break;
+					case "Celsius para Fahrenheit":
+						ConversorTemperatura.celsiusToFahrenheit(input);
+						break;
+					case "Kelvin para Celsius":
+						ConversorTemperatura.kelvinToCelsius(input);
+						break;
+					case "Kelvin para Fahrenheit":
+						ConversorTemperatura.kelvinToFahrenheit(input);
+						break;
+					case "Fahrenheit para Celsius":
+						ConversorTemperatura.fahrenheitToKelvin(input);
+						break;
+					case "Fahrenheit para Kelvin":
+						ConversorTemperatura.fahrenheitToKelvin(input);
+						break;
+					}						
+				} else {
+					JOptionPane.showMessageDialog(null, "Insira um valor válido!");
+				}
+					
+				int continua = JOptionPane.showConfirmDialog(null, "Deseja continuar?");
+				if(JOptionPane.OK_OPTION == continua) {
+				
+				} else if (JOptionPane.NO_OPTION == continua){
+					JOptionPane.showMessageDialog(null, "Programa finalizado! Até breve.");
+					break;
+				} else {
+					JOptionPane.showMessageDialog(null, "Programa concluído");
+					break;
+				}
+				
 			} else {
 				break;
 			}
