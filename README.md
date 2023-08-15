@@ -41,5 +41,5 @@ Estou terminando esse projeto muito feliz e satisfeito. Aprendi muito ao longo d
 
 # :alien: Autor :alien:
 
-[<img loading="lazy" src="https://github.com/danillobarcelos/conversor-de-moeda-challenge-ONE/assets/103617128/b117b08d-ad83-46a6-b5c8-45923652c265" width=135><br><a href="https://www.linkedin.com/in/danillobarcelos">Danillo Fernandes Barcelos</a>](https://www.linkedin.com/in/danillobarcelos) 
+[<img loading="lazy" src="https://github.com/danillobarcelos/conversor-de-moeda-challenge-ONE/assets/103617128/b117b08d-ad83-46a6-b5c8-45923652c265" width=135><br><a href="https://www.linkedin.com/in/danillobarcelos"  target="_blank">Danillo Fernandes Barcelos</a>](https://www.linkedin.com/in/danillobarcelos) 
 
