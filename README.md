@@ -6,7 +6,7 @@ O projeto apresentado faz parte do primeiro Challenge de Java do programa ONE - 
 
 # :computer: O projeto :computer:
 
-Como parte da formação Java e Programação Orientada a Objetos, foi proposto o challenge para a construção de um Conversor de Moedas. Além de aplicar os conceitos de POO com Java, também foi adicionada uma interface visual por meio da biblioteca Java Swing. Como forma de implementar ainda mais o projeto, foi proposto a criação de um novo tipo de conversor. Para o meu projeto, eu escolhi um Conversor de Temperaturas. 
+Como parte da formação Java e Programação Orientada a Objetos, foi proposto o challenge para a construção de um Conversor de Moedas. Além de aplicar os conceitos de POO com Java, também foi adicionada uma interface visual por meio da biblioteca Java Swing. Como forma de implementar ainda mais o projeto, foi proposto a criação de um novo tipo de conversor. Para o meu projeto, foi escolhido um Conversor de Temperaturas. 
 
 - `Conversor de Moedas`: O conversor de moedas é capaz de realizar a conversão do Real (moeda brasileira) para o Dólar, Euro, Libras Esterlinas, Peso Argentino e Peso Chileno, e desses para o Real.
 
@@ -33,7 +33,7 @@ Para executar o projeto é muito simples. Veja os passos a seguir:
 
 # :muscle: Principais desafios :muscle: 
 
-O maior desafio enfrentado ao longo desse challenge foi conseguir usar a biblioteca Java Swing. Esse foi o meu primeiro contato com a biblioteca, então precisei me esforçar muito para entender como o ela funcionava e implementar a interface gráfica ao meu projeto. 
+O maior desafio enfrentado ao longo desse challenge foi conseguir usar a biblioteca Java Swing. Esse foi o meu primeiro contato com a biblioteca, então precisei me esforçar muito para entender como o ela funcionava e implementar a interface gráfica ao meu projeto. Foram muitas pesquisas em sites, fóruns, YouTube e principalmente na documentação oficial do Java.
 
 Este foi o meu maior projeto até o momento (agosto/2023) com a plataforma Java e todo o processo foi muito desafiador. O uso da ferramenta Trello foi muito importante nessa jornada, permitindo que em pequenas etapas o projeto fosse realizado. Também me ajudou muito devido na organização do projeto, principalmente por ter que dedicar grande parte do meu tempo em outras atividades do meu dia a dia, como faculdade e trabalho. 
 
