@@ -40,7 +40,7 @@ public class ConversorTemperatura {
 	}
 	
 	public static void fahrenheitToCelsius(double input) {
-		double output = ((input - 32) * (5/9));
+		double output = (input - 32) * 5/9;
 		
 		BigDecimal op = new BigDecimal(output);
 		BigDecimal outputNovo = op.setScale(2, RoundingMode.FLOOR);
@@ -48,7 +48,7 @@ public class ConversorTemperatura {
 	}
 	
 	public static void fahrenheitToKelvin(double input) {
-		double output = ((input - 32) * (5/9)) + 273.15;
+		double output = 273.15 + ((input - 32) * 5/9);
 		
 		BigDecimal op = new BigDecimal(output);
 		BigDecimal outputNovo = op.setScale(2, RoundingMode.FLOOR);

@@ -146,7 +146,7 @@ public class Menu {
 						ConversorTemperatura.kelvinToFahrenheit(input);
 						break;
 					case "Fahrenheit para Celsius":
-						ConversorTemperatura.fahrenheitToKelvin(input);
+						ConversorTemperatura.fahrenheitToCelsius(input);
 						break;
 					case "Fahrenheit para Kelvin":
 						ConversorTemperatura.fahrenheitToKelvin(input);
